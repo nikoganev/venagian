@@ -1,0 +1,23 @@
+{{ if isset .Site.Params "carousel" }}
+{{ if .Site.Params.carousel.enable }}
+{{ if gt (len .Site.Data.carousel) 0 }}
+<section>
+
+        <div class="container-fluid homepage-header">
+              <div class="">
+                  <div class="row" style="z-index:10000;">
+                    <div class="col-md-10" style="margin-left:auto;margin-right:auto;float:none;">
+                      <h1>Venagian Services</h1>
+                      <p>Venagian is committed to providing fast and effective solutions for your business needs in this digital world</p>
+                      <a href="#contact" class="btn btn-success">Contact Us</a>
+                    </div>
+                  </div>
+              </div>
+            <!-- /.project owl-slider -->
+
+        </div>
+
+</section>
+{{ end }}
+{{ end }}
+{{ end }}
